@@ -19,7 +19,7 @@ def root():
 def get_video_url(video_id: str):
     try:
         ydl_opts = {
-            'format': 'best[ext=mp4][height<=480]/best[ext=mp4]/best',
+            'format': 'best/bestvideo+bestaudio',
             'quiet': True,
             'no_warnings': True,
         }
